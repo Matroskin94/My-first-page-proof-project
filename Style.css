@@ -24,7 +24,6 @@ html {
 	background:url(images/html-bg.jpg) top repeat-x;
 }
 
-
 .clr {
 	clear:both;	
 }
@@ -46,7 +45,8 @@ html {
 	padding:0px 15px 0px 0px;
 	width:470px;
 	height:35px;
-	color:white;	
+	color:white;
+	z-index: 100;	
 }
 
 .menu ul {
@@ -86,29 +86,31 @@ html {
 .rocket {
 	position:absolute;
 	left:600px;
-	top:115px;
-	background:url(images/body-bg.png);	
+	top:115px;	
 }
 
 .logo {
-	position: absolute;
-	top:106px;
-	background:url(images/logo.png);	
+	margin-top:106px;
+	float:left;	
 }
 
 .home {
 	height: 760px;
 	width: 100%;
+	overflow: hidden;
 }
 
 .welcome {
-	position:absolute;
+	overflow: hidden;
+	float:left;
 	width:500px;
-	height: 456px;
+	height: 320px;
 	background:url(images/welcome-bg.png)  no-repeat;
 	background-position: 0px 30px;
-	bottom:0px;
-	left:79px;
+	margin:120px 0 0 80px;
+	/*bottom:0px;*/
+	/*left:79px;*/
+	/*margin: 120px 0 0 80px;*/
 }
 
 .welcome h1 {
@@ -117,7 +119,7 @@ html {
 	font-size:18px; 
 	color:#ffd200;	
 	font-weight:normal;
-	margin:0 0 30px 0;
+	margin:7px 0 30px 0;
 }
 
 .welcome p{
@@ -129,42 +131,61 @@ html {
 }
 
 .network {
-	position:absolute;
-	background:url(images/network-bg.png) no-repeat;
-	bottom:0px;
 	width:132px;
 	height:174px;
-	bottom:131px;
-	right:66px;
-	/*border:black solid 1px;*/
+	clear:both;
+	float:right;
+	background:url(images/network-bg.png) no-repeat;
+	background-position:right;
+	margin:-163px 67px 0 0;
 }
 
 .network h2 {
-	left:33px;
-	top:54px;
+	margin:54px 0 0 34px;
 	font-family:'BonvenoCFLight'; 
 	font-size:14px; 
 	color:#ffd200; 
 	text-transform:uppercase; 
 	font-weight:normal; 
-	position:relative; 	
+
 }
 
-.icons {
-	position:absolute;
-	margin-top: 61px;
-	margin-left: 59px;	
-}
-
-.icons p{
+.network p {
 	font-family:Arial, Helvetica, sans-serif; 
 	color:#fff; 
 	font-size:11px; 
-	padding:5px 0 5px 0;
+	margin:8px 0 0 58px;	
 }
 
-.icons img{
-	padding-right:7px;	
+.network img{
+	margin-right:10px;	
 }
 
+.baloon1 {
+	position:absolute;
+	margin:142px 0 0 34px;
+	z-index:99;	
+}
 
+.baloon2 {
+	position:absolute;
+	margin:194px 0 0 152px;
+	z-index:98;	
+}
+
+.about-clouds1{
+	position:absolute;
+	z-index:97;
+	margin:260px 0 0 30px;
+}
+
+.about-clouds2{
+	position:absolute;
+	z-index:97;
+	margin:490px 0 0 170px;
+}
+
+.about {
+	width:100%;
+	height: 760px;	
+}
