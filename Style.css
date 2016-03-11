@@ -245,8 +245,70 @@ html {
 	color:#fff;
 }
 
+.portfolio-clouds1{
+	position:absolute;
+	z-index:97;
+	margin:90px 0 0 720px;
+}
+
+.portfolio-clouds2{
+	position:absolute;
+	z-index:97;
+	margin:500px 0 0 0px;
+}
+
 .portfolio {
 	overflow:hidden;
 	width:100%;
 	height: 735px;	
 }
+
+.portfolio-galery {
+	height:350px;
+	width:720px;
+	background:url(images/portfolio-bg.png) no-repeat;	
+	background-position:4px 37px;
+	margin:140px 0 0 0;
+}
+
+.portfolio-galery h1 {
+	font-family:'BonvenoCFLight'; 
+	font-size:18px; 
+	color:#014f86; 
+	text-transform:uppercase; 
+	font-weight:normal; 
+	margin:0 0 0 8px;	
+}
+
+.portfolio-image {
+	margin:20px 0 0 20px;	
+}
+
+.portfolio-find {
+	position:absolute;	 
+	width:172px;
+	height:62px;
+	background:url(images/find-us.png) no-repeat;
+	margin:22px 0 0 720px;
+	/*margin:35px 70px 0 0;	*/
+}
+.portfolio-find h2 {
+	padding: 30px 6px 0 27px; 
+	float:left;
+	color:#014f86; 
+	text-transform:uppercase; 
+	font-size:12px; 
+	font-family:'BonvenoCFLight'; 	
+}
+
+.portfolio-find img {
+	margin-top:30px;
+	margin-left:10px;
+}
+
+.contacts {
+	overflow:hidden;
+	width:100%;
+	height:753px;	
+}
+
