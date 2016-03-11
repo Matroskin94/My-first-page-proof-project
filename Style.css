@@ -260,7 +260,8 @@ html {
 .portfolio {
 	overflow:hidden;
 	width:100%;
-	height: 735px;	
+	height: 735px;
+	z-index:90;	
 }
 
 .portfolio-galery {
@@ -310,5 +311,95 @@ html {
 	overflow:hidden;
 	width:100%;
 	height:753px;	
+}
+
+.contacts-hill {
+	position:absolute;
+	z-index:91;
+	margin:-133px 0 0 130px;	
+}
+
+.contacts-tree1 {
+	position:absolute;
+	margin:275px 0 0 5px;
+}
+
+.contacts-tree2 {
+	position:absolute;
+	margin:480px 0 0 720px;
+}
+
+.contact-field {
+	position:absolute;
+	overflow:hidden;
+	width:490px;
+	height:340px;	
+	background:url(images/contacts-bg.png) no-repeat;
+	background-position:0 50px;
+	margin:266px 0 0 224px;
+	
+}
+
+.contact-field h1{
+	font-family:'BonvenoCFLight'; 
+	font-size:18px; 
+	color:#fff; 
+	text-transform:uppercase; 
+	font-weight:normal; 
+	margin:2px 0 17px 4px;	
+}
+
+.contact-field p {
+	posotion:absolute;
+	color:#fff; 
+	font-size:11px; 
+	font-family:'BonvenoCFLight'; 
+	margin:9px 0 0 0;
+	padding-top:10px;
+}
+
+.contact-field textarea {
+	background:url(images/textarea-bg.png) no-repeat;
+	height:147px;
+	width:273px;
+	border:none;
+	margin:0 15px 5px 30px;
+	padding-left:10px;
+	padding-top:5px;
+	resize:none;
+	color:#b0d534; 
+	font-family:'BonvenoCFLight'; 
+	font-size:12px;
+	float:left;	
+}
+
+.input-name {
+	background:url(images/input-bg.png) no-repeat;
+	width:284px;
+	height:32px;
+	border:none;
+	margin:0px 4px 5px 30px;
+	padding-left:10px;
+	float:left;	
+	color:#b0d534; 
+	font-family:'BonvenoCFLight'; 
+	font-size:12px;
+}
+
+.send-btn {
+	position:absolute;
+	margin:86px 0 0 0;	
+}
+
+.call-us {
+	clear:both;
+	float:left;
+	margin:25px 0 0 32px;	
+}
+
+.call-us span {
+	color:#ffcc00; 
+	font-size:11px; 
+	font-family: Arial, Helvetica, sans-serif;	
 }
 
