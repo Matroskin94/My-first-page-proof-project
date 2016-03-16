@@ -29,35 +29,32 @@ var main = function(){
 		}
 	});	
 
-	window.scrollTo(0,700);
 	$(".menu").on('click', 'a', function(event){
-		//console.log($(this).text());
-		//console.log($(menu_tabs[0]).text());
-		//console.log($(event.currentTarget).lastChild);
 		$(menu_tabs).removeClass('active');
 		if($(this).text() === "Home"){
+    		$('html, body').animate({scrollTop: 0},500);
 			flag = true;
 			$(menu_tabs[0]).addClass('active');
 		}
 
 		if($(this).text() === "About us"){
-			//$("html,body").scrollTop(700);
+			$('html, body').animate({scrollTop: 850},500);
 			$(menu_tabs[1]).addClass('active');
 			flag = false;
 		}
 
 		if($(this).text() === "Portfolio"){
-			$(window).scrollY = 1401;
+			$('html, body').animate({scrollTop: 1520},500);
 			$(menu_tabs[2]).addClass('active');
 			flag = true;
 		}
 
 		if($(this).text() === "Contact"){
-			$(window).scrollY = 2201;
+			$('html, body').animate({scrollTop: 2200},500);
 			$(menu_tabs[3]).addClass('active');
 			flag = false;
 		}
-
+		return false;
 	});
 };
 
