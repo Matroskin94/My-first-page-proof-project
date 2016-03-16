@@ -240,9 +240,18 @@ html {
 	padding-top:10px;
 }
 
-.about-info li a.active {
+.about-us {
+	height: 243px;
+
+}
+
+.about-info li a.active-about {
 	background:url(images/about-link-bg.jpg) top center no-repeat;
 	color:#fff;
+}
+
+#about-us-2, #about-us-1{
+	display: none;
 }
 
 .portfolio-clouds1{

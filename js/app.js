@@ -3,6 +3,7 @@ var main = function(){
 		menu_tabs = $(menu_elem).find("a"),
 		scroll_y = null,
 		flag = false;
+		//about_tabs = $(document.getElementsByClassName("about")[0]).find('a');
 	
 	$(window).scroll(function(event){
 		scroll_y = window.scrollY;
@@ -30,6 +31,7 @@ var main = function(){
 	});	
 
 	$(".menu").on('click', 'a', function(event){
+		//console.log("clicked");
 		$(menu_tabs).removeClass('active');
 		if($(this).text() === "Home"){
     		$('html, body').animate({scrollTop: 0},500);
@@ -54,6 +56,15 @@ var main = function(){
 			$(menu_tabs[3]).addClass('active');
 			flag = false;
 		}
+		return false;
+	});
+
+	$(".about-info").on("click", "a", function(event){
+		$('.active-about').removeClass("active-about");
+		$(this).addClass("active-about");
+		$('.about-us').slideUp();
+		var curr_tab = $(this).attr("title");
+		$('#'+curr_tab).slideDown();
 		return false;
 	});
 };
